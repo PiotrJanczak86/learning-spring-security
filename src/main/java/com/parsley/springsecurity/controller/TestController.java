@@ -13,8 +13,13 @@ public class TestController {
         return "This is an unrestricted page";
     }
 
-    @GetMapping("/restricted")
-    public String restricted(){
-        return "This is a restricted page";
+    @GetMapping("/user")
+    public String userRestricted(){
+        return "This is a restricted page for users";
+    }
+
+    @GetMapping("/admin")
+    public String adminRestricted(){
+        return "This is a restricted page for admins";
     }
 }
